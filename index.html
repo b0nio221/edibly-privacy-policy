@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - Edibly</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #00B4D8;
+            border-bottom: 3px solid #00B4D8;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0369a1;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #0c4a6e;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .update-date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .contact {
+            background: #f0f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Polityka Prywatności - Edibly</h1>
+    <p class="update-date">Ostatnia aktualizacja: 4 marca 2026</p>
+
+    <h2>1. Wprowadzenie</h2>
+    <p>Niniejsza Polityka Prywatności opisuje, w jaki sposób aplikacja Edibly ("my", "nas", "nasz") zbiera, wykorzystuje i chroni dane osobowe użytkowników ("Ty", "Twoje").</p>
+
+    <h2>2. Zbierane dane</h2>
+    
+    <h3>2.1 Dane osobowe</h3>
+    <ul>
+        <li><strong>Email</strong> - do rejestracji i logowania</li>
+        <li><strong>Hasło</strong> - zaszyfrowane, do uwierzytelniania</li>
+        <li><strong>Nazwa wyświetlana</strong> - opcjonalna, do personalizacji</li>
+    </ul>
+
+    <h3>2.2 Zdjęcia</h3>
+    <ul>
+        <li><strong>Zdjęcia produktów</strong> - 4 zdjęcia na produkt (przód, kod kreskowy, skład, tabela wartości odżywczych)</li>
+        <li>Zdjęcia są przechowywane w Firebase Storage</li>
+        <li>Używane do weryfikacji zgłoszeń produktów</li>
+    </ul>
+
+    <h3>2.3 Dane żywieniowe</h3>
+    <ul>
+        <li><strong>Produkty w lodówce</strong> - nazwa, data ważności, ilość</li>
+        <li><strong>Lista zakupów</strong> - produkty do kupienia</li>
+        <li><strong>Plany posiłków</strong> - zaplanowane posiłki na tydzień</li>
+        <li><strong>Historia skanowania</strong> - produkty, które zeskanowałeś</li>
+    </ul>
+
+    <h3>2.4 Zgłoszenia produktów</h3>
+    <ul>
+        <li><strong>Dane produktu</strong> - nazwa, marka, kod kreskowy, skład, wartości odżywcze</li>
+        <li><strong>Zdjęcia produktu</strong> - 4 zdjęcia weryfikacyjne</li>
+        <li><strong>Status zgłoszenia</strong> - pending/approved/rejected</li>
+    </ul>
+
+    <h3>2.5 Informacje o urządzeniu</h3>
+    <ul>
+        <li><strong>Nazwa urządzenia</strong> - do powiadomień push</li>
+        <li><strong>Model urządzenia</strong> - do powiadomień push</li>
+        <li><strong>System operacyjny</strong> - Android/iOS</li>
+        <li><strong>Wersja systemu</strong> - do kompatybilności</li>
+        <li><strong>Token powiadomień</strong> - Expo Push Token</li>
+    </ul>
+
+    <h3>2.6 Statystyki i aktywność</h3>
+    <ul>
+        <li><strong>Liczba skanowań</strong> - dziennie (limit 5 dla użytkowników bez Premium)</li>
+        <li><strong>Liczba zgłoszonych produktów</strong> - do systemu nagród</li>
+        <li><strong>Status Premium</strong> - aktywny/nieaktywny, data końca</li>
+    </ul>
+
+    <h2>3. Uprawnienia aplikacji</h2>
+    
+    <h3>3.1 Kamera</h3>
+    <ul>
+        <li><strong>Cel</strong>: Skanowanie kodów kreskowych produktów</li>
+        <li><strong>Kiedy używane</strong>: Tylko gdy użytkownik kliknie "Skanuj produkt"</li>
+        <li><strong>Wymagane</strong>: Tak (do podstawowej funkcjonalności)</li>
+    </ul>
+
+    <h3>3.2 Powiadomienia</h3>
+    <ul>
+        <li><strong>Cel</strong>: Przypomnienia o posiłkach, powiadomienia o zatwierdzeniu produktów</li>
+        <li><strong>Kiedy używane</strong>: Według harmonogramu użytkownika</li>
+        <li><strong>Wymagane</strong>: Nie (opcjonalne)</li>
+    </ul>
+
+    <h3>3.3 Internet</h3>
+    <ul>
+        <li><strong>Cel</strong>: Komunikacja z Firebase, pobieranie danych produktów</li>
+        <li><strong>Wymagane</strong>: Tak (aplikacja wymaga połączenia)</li>
+    </ul>
+
+    <h2>4. Usługi zewnętrzne</h2>
+
+    <h3>4.1 Firebase (Google)</h3>
+    <ul>
+        <li><strong>Firebase Authentication</strong> - zarządzanie kontami użytkowników</li>
+        <li><strong>Firebase Realtime Database</strong> - przechowywanie danych użytkownika</li>
+        <li><strong>Firebase Storage</strong> - przechowywanie zdjęć produktów</li>
+        <li><strong>Expo Notifications</strong> - wysyłanie powiadomień push</li>
+    </ul>
+    <p>Polityka prywatności Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+
+    <h3>4.2 Google AdMob</h3>
+    <ul>
+        <li><strong>Cel</strong>: Wyświetlanie reklam (tylko dla użytkowników bez Premium)</li>
+        <li><strong>Zbierane dane</strong>: Identyfikator reklamowy, dane o urządzeniu</li>
+        <li><strong>Personalizacja</strong>: Możesz wyłączyć spersonalizowane reklamy w ustawieniach urządzenia</li>
+    </ul>
+    <p>Polityka prywatności AdMob: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></p>
+
+    <h3>4.3 Expo Notifications</h3>
+    <ul>
+        <li><strong>Cel</strong>: Dostarczanie powiadomień push</li>
+        <li><strong>Zbierane dane</strong>: Token urządzenia (Expo Push Token)</li>
+    </ul>
+    <p>Polityka prywatności Expo: <a href="https://expo.dev/privacy">https://expo.dev/privacy</a></p>
+
+    <h2>5. Jak wykorzystujemy dane</h2>
+    <ul>
+        <li><strong>Funkcjonalność aplikacji</strong> - umożliwienie korzystania z funkcji (skanowanie, lodówka, planer)</li>
+        <li><strong>Personalizacja</strong> - dostosowanie treści do Twoich preferencji</li>
+        <li><strong>Powiadomienia</strong> - przypomnienia o posiłkach, informacje o zatwierdzeniu produktów</li>
+        <li><strong>System nagród</strong> - śledzenie postępu w dodawaniu produktów</li>
+        <li><strong>Wsparcie techniczne</strong> - rozwiązywanie problemów i ulepszanie aplikacji</li>
+    </ul>
+
+    <h2>6. Udostępnianie danych</h2>
+    <p><strong>NIE sprzedajemy</strong> Twoich danych osobowych osobom trzecim.</p>
+    <p>Dane są udostępniane tylko:</p>
+    <ul>
+        <li><strong>Firebase/Google</strong> - hosting i infrastruktura</li>
+        <li><strong>Google AdMob</strong> - wyświetlanie reklam (tylko dla użytkowników bez Premium)</li>
+        <li><strong>Expo</strong> - dostarczanie powiadomień push</li>
+    </ul>
+
+    <h2>7. Bezpieczeństwo danych</h2>
+    <ul>
+        <li><strong>Szyfrowanie</strong> - wszystkie dane są przesyłane przez HTTPS</li>
+        <li><strong>Hasła</strong> - przechowywane w zaszyfrowanej formie (Firebase Authentication)</li>
+        <li><strong>Dostęp</strong> - tylko autoryzowani użytkownicy mają dostęp do swoich danych</li>
+        <li><strong>Backup</strong> - regularne kopie zapasowe w Firebase</li>
+    </ul>
+
+    <h2>8. Twoje prawa</h2>
+    <p>Masz prawo do:</p>
+    <ul>
+        <li><strong>Dostępu</strong> - możesz zobaczyć swoje dane w aplikacji (Profil → Ustawienia)</li>
+        <li><strong>Poprawiania</strong> - możesz edytować swoje dane w aplikacji</li>
+        <li><strong>Usunięcia</strong> - możesz usunąć konto i wszystkie dane (Profil → Ustawienia → Usuń konto)</li>
+        <li><strong>Eksportu</strong> - możesz poprosić o eksport swoich danych (skontaktuj się z nami)</li>
+        <li><strong>Sprzeciwu</strong> - możesz sprzeciwić się przetwarzaniu danych (usuń konto)</li>
+    </ul>
+
+    <h2>9. Przechowywanie danych</h2>
+    <ul>
+        <li><strong>Aktywne konto</strong> - dane są przechowywane dopóki korzystasz z aplikacji</li>
+        <li><strong>Usunięte konto</strong> - dane są usuwane w ciągu 30 dni od usunięcia konta</li>
+        <li><strong>Backup</strong> - kopie zapasowe są przechowywane przez 90 dni</li>
+    </ul>
+
+    <h2>10. Dzieci</h2>
+    <p>Aplikacja nie jest przeznaczona dla dzieci poniżej 13 roku życia. Nie zbieramy świadomie danych od dzieci poniżej 13 lat.</p>
+
+    <h2>11. Zmiany w polityce</h2>
+    <p>Możemy aktualizować tę Politykę Prywatności. O istotnych zmianach poinformujemy Cię przez:</p>
+    <ul>
+        <li>Powiadomienie w aplikacji</li>
+        <li>Email (jeśli podałeś)</li>
+        <li>Aktualizację daty na górze tej strony</li>
+    </ul>
+
+    <h2>12. Zgodność z RODO</h2>
+    <p>Jesteśmy zobowiązani do przestrzegania Ogólnego Rozporządzenia o Ochronie Danych (RODO). Twoje dane są przetwarzane zgodnie z:</p>
+    <ul>
+        <li><strong>Podstawa prawna</strong>: zgoda użytkownika (Art. 6(1)(a) RODO)</li>
+        <li><strong>Cel</strong>: świadczenie usług aplikacji</li>
+        <li><strong>Okres</strong>: do momentu usunięcia konta</li>
+    </ul>
+
+    <div class="contact">
+        <h2>13. Kontakt</h2>
+        <p>Jeśli masz pytania dotyczące tej Polityki Prywatności lub chcesz skorzystać ze swoich praw, skontaktuj się z nami:</p>
+        <ul>
+            <li><strong>Email</strong>: [TWÓJ_EMAIL]</li>
+            <li><strong>Aplikacja</strong>: Profil → Pomoc → Kontakt</li>
+        </ul>
+    </div>
+
+    <hr style="margin-top: 50px; border: none; border-top: 1px solid #ddd;">
+    <p style="text-align: center; color: #666; font-size: 14px;">
+        © 2026 Edibly. Wszystkie prawa zastrzeżone.
+    </p>
+</body>
+</html>
